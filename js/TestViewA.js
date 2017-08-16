@@ -1,6 +1,8 @@
 import Backbone from 'backbone';
 import Model from './TestModel';
 
+import '../css/view-a.css';
+
 export default Backbone.View.extend({
     el: $('.main-wrapper'),
     /**

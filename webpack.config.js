@@ -17,7 +17,7 @@ module.exports = function () {
             google: 'google'
         },
         entry: {
-            "a": './entries/a.js'
+            "a": './entries/a.entry.js'
         },
         output: {
             path: path.resolve(__dirname, "./dist"),
@@ -72,8 +72,7 @@ module.exports = function () {
             // Maybe it only makes sense to do for things like formENtryClient and whatnot.  Needs some thoughting.
             new webpack.optimize.CommonsChunkPlugin({
                 name: "webpack.common",
-                filename: "./webpack.common.js",
-                minChunks: 40
+                filename: "./webpack.common.js"
             }),
             // populate the global jquery namespace
             new webpack.ProvidePlugin({
