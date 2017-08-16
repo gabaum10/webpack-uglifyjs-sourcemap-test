@@ -4,6 +4,7 @@
   "description": "Test for bad sourcemaps with some combination of webpack, uglifyjs-webpack-plugin and babel",
   "main": "index.html",
   "scripts": {
+    "prebuild": "npm install",
     "build": "cross-env NODE_ENV=production webpack"
   },
   "repository": {
